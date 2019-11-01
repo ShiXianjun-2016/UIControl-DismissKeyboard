@@ -6,4 +6,5 @@
 * 设置
 ![设置](./resource/pic-01@2x.png)
 * 效果
+
 ![效果](./resource/dismiss.gif)
