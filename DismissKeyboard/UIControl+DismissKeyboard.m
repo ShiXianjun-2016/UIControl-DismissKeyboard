@@ -37,6 +37,8 @@ static NSString *endEditingWhenActionKey = @"endEditingWhenActionKey";
 {
     if (endEditingWhenAction) {
         [self addTarget:self action:@selector(dkDismissKeyboard:) forControlEvents:UIControlEventTouchUpInside];
+    }else{
+        [self removeTarget:self action:@selector(dkDismissKeyboard:) forControlEvents:UIControlEventTouchUpInside];
     }
     objc_setAssociatedObject(self, &endEditingWhenActionKey, @(endEditingWhenAction), OBJC_ASSOCIATION_ASSIGN);
 }

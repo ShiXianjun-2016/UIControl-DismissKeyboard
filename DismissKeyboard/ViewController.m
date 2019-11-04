@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIControl+DismissKeyboard.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -16,7 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.loginButton.endEditingWhenAction = NO;
+    self.loginButton.endEditingWhenAction = NO;
+    self.loginButton.endEditingWhenAction = NO;
 }
 
 
